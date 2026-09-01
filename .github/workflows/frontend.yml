@@ -61,7 +61,7 @@ jobs:
 
             APP_DIR=/home/ec2-user/front
             REPO_NAME=Maven-Java-Springboot-Project
-            REPO_URL=https://github.com/Gitwithaniket/Maven-Java-Springboot-Project.git
+            REPO_URL=https://github.com/Gitwithaniket/Java-Springboot-Project.git
 
             echo "🚀 Starting deployment..."
 
@@ -97,9 +97,9 @@ jobs:
 
             [Service]
             User=ec2-user
-            WorkingDirectory=/home/ec2-user/front/Maven-Java-Springboot-Project/frontend
+            WorkingDirectory=/home/ec2-user/front/Java-Springboot-Project/frontend
 
-            ExecStart=/bin/bash -c 'source /home/ec2-user/front/Maven-Java-Springboot-Project/frontend/venv/bin/activate && streamlit run app.py --server.port=8501 --server.address=0.0.0.0'
+            ExecStart=/bin/bash -c 'source /home/ec2-user/front/Java-Springboot-Project/frontend/venv/bin/activate && streamlit run app.py --server.port=8501 --server.address=0.0.0.0'
 
             Environment=API_URL=http://localhost:8084
 

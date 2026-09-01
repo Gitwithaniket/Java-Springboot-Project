@@ -10,7 +10,7 @@ pipeline {
 
         stage('SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/Gitwithaniket/Maven-Java-Springboot-Project.git
+                git branch: 'main', url: 'https://github.com/Gitwithaniket/Java-Springboot-Project.git
             }
         }
 

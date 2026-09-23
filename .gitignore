@@ -1,3 +1,37 @@
+cat > .gitignore <<'EOF'
+# VS Code
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Java / Maven
 target/
 *.class
 *.jar
+*.war
+
+# Logs
+*.log
+logs/
+
+# Node
+node_modules/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform variable secrets
+*.tfvars
+!*.tfvars.example
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF
